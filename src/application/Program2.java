@@ -32,6 +32,7 @@ public class Program2 {
 
 			}
 			
+			// Obtém os emails em ordem alfabética dos usuários que possuem um salário maior do que o informado.
 			List<String> emails = list.stream().filter(e -> e.getSalary() > salary).map(p -> p.getEmail()).sorted().collect(Collectors.toList());
 			
 			for(String email: emails) {
